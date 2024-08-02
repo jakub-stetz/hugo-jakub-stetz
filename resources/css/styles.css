@@ -1,0 +1,16 @@
+* {
+  font-family: 'Times New Roman', serif;
+}
+
+html {
+  background-color: rgb(21, 64, 74);
+  border-bottom: 1px solid white;
+}
+
+header, footer {
+  background-color: black;
+}
+
+h1, nav * {
+  color: white;
+}
