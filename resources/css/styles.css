@@ -1,9 +1,87 @@
+/*** Loading Cormorant Garamond font family ***/
+
+/* Unitalicized */
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('../fonts/garamond/CormorantGaramond-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('../fonts/garamond/CormorantGaramond-Regular.ttf') format('truetype');
+  font-weight: normal; /* i.e. 400 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('../fonts/garamond/CormorantGaramond-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('../fonts/garamond/CormorantGaramond-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('../fonts/garamond/CormorantGaramond-Bold.ttf') format('truetype');
+  font-weight: bold; /* i.e. 700 */
+  font-style: normal;
+}
+
+/* Italicized */
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('../fonts/garamond/CormorantGaramond-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('../fonts/garamond/CormorantGaramond-Italic.ttf') format('truetype');
+  font-weight: normal; /* i.e. 400 */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('../fonts/garamond/CormorantGaramond-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('../fonts/garamond/CormorantGaramond-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('../fonts/garamond/CormorantGaramond-BoldItalic.ttf') format('truetype');
+  font-weight: bold; /* i.e. 700 */
+  font-style: italic;
+}
+
+/*** Type Selectors ***/
+
 * {
-  font-family: 'Times New Roman', serif;
+  font-family: Garamond, 'Times New Roman', serif;
 }
 
 html {
-  background-color: rgb(21, 64, 74);
+  background-color: rgb(222, 222, 222);
   border-bottom: 1px solid white;
 }
 
