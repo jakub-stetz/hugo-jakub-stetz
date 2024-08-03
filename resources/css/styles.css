@@ -1,4 +1,4 @@
-/*** Loading Cormorant Garamond font family ***/
+/*** Loading Cormorant Garamond Font Family ***/
 
 /* Unitalicized */
 
@@ -74,21 +74,23 @@
   font-style: italic;
 }
 
+/*** Loading Montserrat Font Family ***/
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-style: italic;
+}
+
 /*** Type Selectors ***/
 
 * {
   font-family: Garamond, 'Times New Roman', serif;
-}
-
-html {
-  background-color: rgb(222, 222, 222);
-  border-bottom: 1px solid white;
-}
-
-header, footer {
-  background-color: black;
-}
-
-h1, nav * {
-  color: white;
+  color: black;
 }
