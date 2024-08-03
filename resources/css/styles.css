@@ -93,7 +93,6 @@
 * {
   font-family: Montserrat, 'Trebuchet MS', Arial, sans-serif;
   color: white;
-  transition: all 0.5s; /* For consistent animation duration for all reactive elements. */
 }
 
 h1, h2 {
@@ -173,7 +172,7 @@ h1 { /* Website title (my name) in the website header. */
 /*** Navigation ***/
 
 nav {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(20, 20, 20);
   display: flex;
   justify-content: space-evenly;
   margin: 0;
@@ -186,7 +185,7 @@ nav a, nav p {
   margin: 1rem 0;
   min-width: 200px;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 0.875rem;transition: all 0.5s;
 }
 
 nav a:hover, nav p {
@@ -201,4 +200,19 @@ nav a:active {
 
 nav p { /* Current page. */
   cursor: default;
+}
+
+/*** Main ***/
+
+main {
+  background-color: rgb(40, 40, 40);
+  padding: 3rem 18%;
+}
+
+main p, main li {
+  margin-top: 1.5rem;
+}
+main li {
+  margin-top: .625rem;
+  margin-left: 2rem;
 }
