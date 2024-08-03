@@ -93,6 +93,7 @@
 * {
   font-family: Montserrat, 'Trebuchet MS', Arial, sans-serif;
   color: white;
+  transition: all 0.5s; /* For consistent animation duration for all reactive elements. */
 }
 
 h1, h2 {
@@ -167,4 +168,37 @@ h1 { /* Website title (my name) in the website header. */
   color: #999;
   margin: 15px 0;
   font-size: 18px;
+}
+
+/*** Navigation ***/
+
+nav {
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+nav a, nav p {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1rem 0;
+  min-width: 200px;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+nav a:hover, nav p {
+  color: rgb(77, 228, 254);
+  transform: scale(1.08);
+}
+
+nav a:active {
+  color: rgb(254, 77, 92);
+  transition: color 0s;
+}
+
+nav p { /* Current page. */
+  cursor: default;
 }
