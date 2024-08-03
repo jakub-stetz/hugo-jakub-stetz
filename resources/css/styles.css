@@ -88,9 +88,83 @@
   font-style: italic;
 }
 
-/*** Type Selectors ***/
+/*** General Selectors ***/
 
 * {
+  font-family: Montserrat, 'Trebuchet MS', Arial, sans-serif;
+  color: white;
+}
+
+h1, h2 {
   font-family: Garamond, 'Times New Roman', serif;
-  color: black;
+}
+
+/*** Header ***/
+
+/* Header Background */
+
+header {
+  position: relative;
+  background: url("../images/cover-image.jpeg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+header:before { /* Color overlay over background image. */
+  position: absolute;
+  background-color: rgba(11, 45, 34, 0.75);
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+}
+
+header * { /* Ensuring that header content shows up properly above color overlay. */
+  position: relative;
+}
+
+/* Introductory Banner */
+
+#intro-banner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: rgba(11, 32, 46, 0.75);
+  border-radius: 20px;
+  margin: 4rem 12%;
+  padding: 2rem 4%;
+  column-gap: 5%;
+  align-items: center;
+}
+
+#intro-banner .image-container { /* Container for my headshot in the website header. */
+  grid-column: 1 / 2;
+  border-radius: 50%;
+  border: .375rem solid white;
+  min-width: 170px;
+}
+
+#intro-text { /* Introductory text in website header. */
+  grid-column: 2 / 4;
+}
+
+h1 { /* Website title (my name) in the website header. */
+  font-size: 2rem;
+  color: white;
+  border-bottom: white solid .125rem;
+  padding: .125rem 0;
+  letter-spacing: .125rem;
+  font-weight: 500;
+}
+
+#intro-banner ul { /* Container for my introductory descriptors in the website header. */
+  list-style: none;
+  padding: 0 1.5rem;
+}
+
+#intro-banner li { /* My introductory descriptors in the website header. */
+  color: #999;
+  margin: 15px 0;
+  font-size: 18px;
 }
