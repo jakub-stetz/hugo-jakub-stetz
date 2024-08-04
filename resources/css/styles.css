@@ -155,6 +155,7 @@ header * { /* Ensuring that header content shows up properly above color overlay
   border-radius: 50%;
   border: .375rem solid white;
   min-width: 170px;
+  max-width: 220px;
 }
 
 #intro-text { /* Introductory text in website header. */
@@ -222,7 +223,7 @@ nav p { /* Current page. */
 
 main {
   background-color: rgb(40, 40, 40);
-  padding: 3rem 18%;
+  padding: 3rem 18% 8rem;
 }
 
 main p, main li {
@@ -239,6 +240,7 @@ main li {
 footer {
   background-color: rgb(20, 20, 20);
   padding: 3rem 18%;
+  bottom: 0;
 }
 
 footer p {
