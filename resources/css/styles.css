@@ -99,6 +99,18 @@ h1, h2 {
   font-family: Garamond, 'Times New Roman', serif;
 }
 
+a {
+  color: rgb(77, 228, 254);
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: rgb(254, 77, 92);
+}
+
 /*** Header ***/
 
 /* Header Background */
@@ -172,20 +184,24 @@ h1 { /* Website title (my name) in the website header. */
 /*** Navigation ***/
 
 nav {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(15, 15, 15);
   display: flex;
   justify-content: space-evenly;
   margin: 0;
 }
 
 nav a, nav p {
-  color: white;
   text-transform: uppercase;
   text-decoration: none;
   margin: 1rem 0;
   min-width: 200px;
   text-align: center;
-  font-size: 0.875rem;transition: all 0.5s;
+  font-size: 0.875rem;
+  transition: transform 0.5s, color 0.5s;
+}
+
+nav a {
+  color: white;
 }
 
 nav a:hover, nav p {
@@ -211,8 +227,28 @@ main {
 
 main p, main li {
   margin-top: 1.5rem;
+  line-height: 1.5;
 }
+
 main li {
   margin-top: .625rem;
   margin-left: 2rem;
+}
+
+/*** Footer ***/
+footer {
+  background-color: rgb(20, 20, 20);
+  padding: 3rem 18%;
+}
+
+footer p {
+  color: rgb(160, 160, 160);
+  max-width: 500px;
+  min-width: 100px;
+  font-size: .75rem;
+  line-height: 1.8;
+}
+
+#copyright {
+  margin-bottom: 1rem;
 }
