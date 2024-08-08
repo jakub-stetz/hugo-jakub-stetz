@@ -103,6 +103,11 @@ h2 {
   font-size: 2.25rem;
 }
 
+p, li {
+  margin-top: 1.625rem;
+  line-height: 1.65;
+}
+
 a {
   color: hsl(195, 99%, 65%);
 }
@@ -113,11 +118,6 @@ a:hover {
 
 a:active {
   color: rgb(254, 77, 92);
-}
-
-p, li {
-  margin-top: 1.625rem;
-  line-height: 1.65;
 }
 
 .underline {
@@ -184,7 +184,7 @@ h1 { /* Website title (my name) in the website header. */
   font-size: 3rem;
   border-bottom: hsl(195, 0%, 100%) solid .125rem;
   padding-bottom: .125rem;
-  letter-spacing: .125rem;
+  letter-spacing: .1875rem;
   font-weight: 550;
   margin-bottom: 1.25rem
 }
