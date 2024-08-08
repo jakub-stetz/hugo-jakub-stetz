@@ -185,25 +185,34 @@ h1 { /* Website title (my name) in the website header. */
 
 /*** Navigation ***/
 
-nav {
+nav { /* Container for navigation element to facilitate styling. */
   background-color: rgb(15, 15, 15);
   display: flex;
-  justify-content: space-evenly;
-  margin: 0;
 }
 
-nav a, nav p {
+nav div {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 800px;
+}
+
+.narrow-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+nav p, nav a {
   text-transform: uppercase;
   text-decoration: none;
   margin: 1rem 0;
-  min-width: 200px;
+  min-width: 80px;
   text-align: center;
   font-size: 0.875rem;
-  transition: transform 0.5s, color 0.5s;
 }
 
 nav a {
   color: white;
+  transition: transform 0.5s, color 0.5s;
 }
 
 nav a:hover, nav p {
