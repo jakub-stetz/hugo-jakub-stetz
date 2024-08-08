@@ -117,7 +117,7 @@ a:active {
 
 header {
   position: relative;
-  background: url("../images/cover-image.jpeg") center center no-repeat;
+  background: url("../images/cover-image.jpg") center center no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -144,8 +144,8 @@ header * { /* Ensuring that header content shows up properly above color overlay
   grid-template-columns: 1fr 2fr;
   background-color: rgba(11, 32, 46, 0.75);
   border-radius: 20px;
-  margin: 4rem 12%;
-  padding: 2rem 4%;
+  margin: 10% 12%;
+  padding: 4% 5%;
   column-gap: 5%;
   align-items: center;
 }
@@ -154,8 +154,8 @@ header * { /* Ensuring that header content shows up properly above color overlay
   grid-column: 1 / 2;
   border-radius: 50%;
   border: .375rem solid white;
-  min-width: 170px;
-  max-width: 220px;
+  min-width: 190px;
+  max-width: 240px;
 }
 
 #intro-text { /* Introductory text in website header. */
@@ -169,6 +169,7 @@ h1 { /* Website title (my name) in the website header. */
   padding: .125rem 0;
   letter-spacing: .125rem;
   font-weight: 500;
+  margin-bottom: 1.25rem
 }
 
 #intro-banner ul { /* Container for my introductory descriptors in the website header. */
@@ -178,8 +179,8 @@ h1 { /* Website title (my name) in the website header. */
 
 #intro-banner li { /* My introductory descriptors in the website header. */
   color: #999;
-  margin: 15px 0;
-  font-size: 18px;
+  margin: 1rem 0;
+  font-size: 1.125rem;
 }
 
 /*** Navigation ***/
