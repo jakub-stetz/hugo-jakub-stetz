@@ -1,4 +1,4 @@
-/*** Loading Cormorant Garamond Font Family ***/
+/*** Load Cormorant Garamond Font Family ***/
 
 /* Unitalicized */
 
@@ -74,7 +74,7 @@
   font-style: italic;
 }
 
-/*** Loading Montserrat Font Family ***/
+/*** Load Montserrat Font Family ***/
 
 @font-face {
   font-family: 'Montserrat';
@@ -92,23 +92,15 @@
 
 * {
   font-family: Montserrat, 'Trebuchet MS', Arial, sans-serif;
-  color: hsl(0, 0%, 100%);
+  color: hsl(195, 0%, 100%);
 }
 
 html {
-  background-color: hsl(0, 0%, 16%);
-}
-
-h1 {
-  font-family: Garamond, 'Times New Roman', serif;
+  background-color: hsl(195, 0%, 15%);
 }
 
 h2 {
-  font-size: 2.0rem;
-}
-
-p, li {
-  line-height: 1.6;
+  font-size: 2.25rem;
 }
 
 a {
@@ -116,7 +108,7 @@ a {
 }
 
 a:hover {
-  color: hsl(0, 0%, 100%);
+  color: hsl(195, 0%, 100%);
 }
 
 a:active {
@@ -124,7 +116,8 @@ a:active {
 }
 
 p, li {
-  margin-top: 1.5rem;
+  margin-top: 1.625rem;
+  line-height: 1.65;
 }
 
 .underline {
@@ -133,7 +126,6 @@ p, li {
   width: 120px;
   border-radius: 2px;
   background-color: hsl(148, 100%, 35%);
-  border: hsl(148, 100%, 35%) 1px solid;
 }
 
 /*** Header ***/
@@ -158,7 +150,7 @@ header:before { /* Color overlay over background image. */
   left: 0;
 }
 
-header * { /* Ensuring that header content shows up properly above color overlay. */
+header * { /* Ensure that header content shows up properly above color overlay. */
   position: relative;
 }
 
@@ -166,21 +158,21 @@ header * { /* Ensuring that header content shows up properly above color overlay
 
 #intro-banner {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: hsla(195, 80%, 7%, 0.75);
-  border-radius: 20px;
-  margin: 11%;
-  padding: 4% 5%;
-  column-gap: 5%;
   align-items: center;
+  grid-template-columns: 1fr 2fr;
+  background-color: hsla(195, 80%, 7%, 0.78);
+  border-radius: 24px;
+  margin: 11%;
+  padding: 3.5% 4.5%;
+  column-gap: 5%;
 }
 
 #intro-banner .image-container { /* Container for my headshot in the website header. */
   grid-column: 1 / 2;
   border-radius: 50%;
-  border: .375rem solid hsl(0, 0%, 100%);
+  border: .375rem solid hsl(195, 0%, 100%);
   min-width: 190px;
-  max-width: 240px;
+  max-width: 300px;
 }
 
 #intro-text { /* Introductory text in website header. */
@@ -188,11 +180,12 @@ header * { /* Ensuring that header content shows up properly above color overlay
 }
 
 h1 { /* Website title (my name) in the website header. */
-  font-size: 2rem;
-  border-bottom: hsl(0, 0%, 100%) solid .125rem;
-  padding: .125rem 0;
+  font-family: Garamond, 'Times New Roman', serif;
+  font-size: 3rem;
+  border-bottom: hsl(195, 0%, 100%) solid .125rem;
+  padding-bottom: .125rem;
   letter-spacing: .125rem;
-  font-weight: 500;
+  font-weight: 550;
   margin-bottom: 1.25rem
 }
 
@@ -202,15 +195,15 @@ h1 { /* Website title (my name) in the website header. */
 }
 
 #intro-banner li { /* My introductory descriptors in the website header. */
-  color: hsl(0, 0%, 62%);
+  color: hsl(195, 0%, 62%);
   margin: 1rem 0;
-  font-size: 1.125rem;
+  font-size: 1.1875rem;
 }
 
 /*** Navigation ***/
 
 nav { /* Container for navigation element to facilitate styling. */
-  background-color: hsl(0, 0%, 6%);
+  background-color: hsl(195, 0%, 5%);
 }
 
 nav div {
@@ -226,17 +219,17 @@ nav p, nav a {
   margin: 1rem 0;
   min-width: 80px;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
 }
 
 nav a {
-  color: hsl(0, 0%, 100%);
+  color: hsl(195, 0%, 100%);
   transition: transform 0.5s, color 0.5s;
 }
 
 nav a:hover, nav p {
   color: hsl(195, 99%, 65%);
-  transform: scale(1.08);
+  transform: scale(1.1);
 }
 
 nav a:active {
@@ -252,24 +245,26 @@ nav p { /* Current page. */
 /*** Main ***/
 
 main, footer div {
-  padding: 3rem 0;
   max-width: 700px;
   margin: auto;
 }
 
+main {
+  padding: 5rem 0;
+
+}
+
 /*** Footer ***/
 footer {
-  background-color: hsl(0, 0%, 8%);
+  background-color: hsl(195, 0%, 8%);
+  padding: 4rem 0;
 }
 
 footer p {
-  color: hsl(0, 0%, 63%);
-  max-width: 500px;
-  min-width: 100px;
+  margin-top: 0;
+  color: hsl(195, 0%, 60%);
   font-size: .75rem;
   line-height: 1.8;
+  max-width: 400px;
 }
 
-#copyright {
-  margin-bottom: 1rem;
-}
