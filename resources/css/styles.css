@@ -128,92 +128,43 @@ a:active {
   background-color: hsl(148, 100%, 35%);
 }
 
-/*** Header ***/
+/*** Header and Navigation Bar ***/   /* !!! MANY ADJUSTMENTS MADE HERE !!! */
 
-/* Header Background */
-
-header {
-  position: relative;
-  background: url("../images/cover-image.jpg") center center no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-}
-
-header:before { /* Color overlay over background image. */
-  position: absolute;
-  background-color: hsla(148, 60%, 10%, 0.75);
-  width: 100%;
-  height: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-}
-
-header * { /* Ensure that header content shows up properly above color overlay. */
-  position: relative;
-}
-
-/* Introductory Banner */
-
-#intro-banner {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 2fr;
-  background-color: hsla(195, 80%, 7%, 0.78);
-  border-radius: 24px;
-  margin: 11%;
-  padding: 3.5% 4.5%;
-  column-gap: 5%;
-}
-
-#intro-banner .image-container { /* Container for my headshot in the website header. */
-  grid-column: 1 / 2;
-  border-radius: 50%;
-  border: .375rem solid hsl(195, 0%, 100%);
-  min-width: 190px;
-  max-width: 300px;
-}
-
-#intro-text { /* Introductory text in website header. */
-  grid-column: 2 / 4;
-}
-
-h1 { /* Website title (my name) in the website header. */
-  font-family: Garamond, 'Times New Roman', serif;
-  font-size: 3rem;
-  border-bottom: hsl(195, 0%, 100%) solid .125rem;
-  padding-bottom: .125rem;
-  letter-spacing: .1875rem;
-  font-weight: 550;
-  margin-bottom: 1.25rem
-}
-
-#intro-banner ul { /* Container for my introductory descriptors in the website header. */
-  list-style: none;
-  padding: 0 1.5rem;
-}
-
-#intro-banner li { /* My introductory descriptors in the website header. */
-  color: hsl(195, 0%, 62%);
-  margin: 1rem 0;
-  font-size: 1.1875rem;
-}
-
-/*** Navigation ***/
-
-nav { /* Container for navigation element to facilitate styling. */
+header { /* Container for website title and navigation. */
   background-color: hsl(195, 0%, 5%);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 160px;
+  padding: 1rem;
+  gap: 1.5rem;
 }
+
+h1 {/* Website title (my name) in the website header. */
+  font-family: Garamond, 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-right: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+
+header .image-container { /* Container for my headshot in the website header. */
+  border-radius: 50%;
+  border: .125rem solid hsl(195, 0%, 100%);
+  width: 80px;
+}
+
+/* Navigation */ /* !!! NOT SO MANY CHANGES HERE, THOSE THAT ARE HERE ARE SPECIFIED !!! */
 
 nav p, nav a {
   text-transform: uppercase;
   text-decoration: none;
-  margin: 1rem 0;
+  margin: 0;
   min-width: 100px;
   text-align: center;
   line-height: 1.0625rem;
