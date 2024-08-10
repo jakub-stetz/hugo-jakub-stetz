@@ -204,14 +204,10 @@ h1 { /* Website title (my name) in the website header. */
 
 nav { /* Container for navigation element to facilitate styling. */
   background-color: hsl(195, 0%, 5%);
-}
-
-nav div {
-  margin: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  gap: 160px;
 }
 
 nav p, nav a {
@@ -269,4 +265,3 @@ footer p {
   line-height: 1.8;
   max-width: 400px;
 }
-
