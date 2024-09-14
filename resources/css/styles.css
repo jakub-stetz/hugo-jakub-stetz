@@ -104,8 +104,31 @@ h2 {
 }
 
 p, li {
-  margin-top: 1.625rem;
   line-height: 1.65;
+}
+
+p, li, blockquote, #coaching-packages {
+  margin-top: 1.625rem;
+}
+
+blockquote, #coaching-packages {
+  background-color: hsl(195, 10%, 12%);
+  border: 1px solid hsl(195, 99%, 65%);
+  box-shadow: 0 0 6px hsl(195, 99%, 65%);
+  border-radius: 7px;
+}
+
+blockquote {
+  font-family: Garamond, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5;
+  padding: 2rem 1.5rem;
+}
+
+hr {
+  border: 1px solid hsl(195, 0%, 30%);
+  margin: 1.625rem 10% 0;
 }
 
 a {
@@ -200,7 +223,20 @@ main, footer div {
 
 main {
   padding: 5rem 0;
+}
 
+#coaching-packages {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1.5rem 1rem;
+}
+
+#coaching-packages>div {
+  width: 20%;
+  height: 150px;
+  background-color: hsl(195, 0%, 70%);
+  margin: 1rem;
 }
 
 /*** Footer ***/
